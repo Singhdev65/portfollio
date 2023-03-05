@@ -1,29 +1,45 @@
-import React from 'react'
+import { FaAward } from "react-icons/fa"
+import {
+  AboutContentParagraph,
+  AboutMe,
+  AboutMeCard,
+  AboutMeContainer,
+  AboutMeContent,
+  AboutMeImage,
+  CardDescription,
+  CardHeading,
+  CardIcon
+} from "./styles"
 
 export default function About() {
   return (
     <section id='about'>
       <h5>Get To Know</h5>
       <h2>About Me</h2>
-      <div className="container about__container">
-        <div className="about__me">
-            <div className="about__me__image">
-              <img src="" alt="my-image" />
-            </div>
-        </div>
-      </div>
+      <AboutMeContainer>
+        <AboutMe>
+          <AboutMeImage>
+            <img src='' alt='my-image' />
+          </AboutMeImage>
+        </AboutMe>
 
-      <div className="about__content">
-          <div className="about__card">
-            <article className="about__card">
-            {/* ICON HERE */}
-              <h5>Experience</h5>
-              <small>2+ years of working</small>
-            </article>
-
-          </div>
-      </div>
-
+        <AboutMeContent>
+          <AboutMeCard>
+            <CardIcon />
+            <CardHeading>Experience</CardHeading>
+            <CardDescription>2+ years of working</CardDescription>
+          </AboutMeCard>
+          <AboutContentParagraph>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            laboriosam eligendi voluptatum quaerat dolorem facere amet modi
+            distinctio consequatur quasi aut molestiae in at expedita numquam
+            quibusdam incidunt, voluptas doloremque.
+          </AboutContentParagraph>
+          <a href='#contact' className='btn btn-primary'>
+            Let's Connect
+          </a>
+        </AboutMeContent>
+      </AboutMeContainer>
     </section>
   )
 }

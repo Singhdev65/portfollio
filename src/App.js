@@ -4,7 +4,8 @@ import {
   Navigation,
   About,
   Project,
-  Contact
+  Contact,
+  Skill
 } from "./components"
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Navigation />
       <About />
+      <Skill />
       <Project />
       <Contact />
       <Footer />
