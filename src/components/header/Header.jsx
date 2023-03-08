@@ -7,6 +7,9 @@ import {
   ME,
   Scroll
 } from "./styles"
+import MyImg from "../../assets/headerImg.jpeg"
+import { BsLinkedin } from "react-icons/bs"
+import { AiOutlineGithub } from "react-icons/ai"
 
 export default function Header() {
   return (
@@ -24,12 +27,15 @@ export default function Header() {
           </a>
         </CTA>
         <HeaderSocial>
-          <a href='http://linkedin.com' target='_blank'></a>
-          <a href='http://github.com' target='_blank'></a>
-          <a href='http://facebook.com' target='_blank'></a>
+          <a href='http://linkedin.com' target='_blank'>
+            <BsLinkedin />
+          </a>
+          <a href='http://github.com' target='_blank'>
+            <AiOutlineGithub />
+          </a>
         </HeaderSocial>
         <ME>
-          <img src='' alt='me' />
+          <img src={MyImg} alt='my picture' />
         </ME>
         <Scroll href='#contact'>Scroll Down</Scroll>
       </Container>

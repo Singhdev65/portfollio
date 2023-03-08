@@ -1,4 +1,3 @@
-import { FaAward } from "react-icons/fa"
 import {
   AboutContentParagraph,
   AboutMe,
@@ -10,6 +9,7 @@ import {
   CardHeading,
   CardIcon
 } from "./styles"
+import AboutMeImg from "../../assets/myImg.jpeg"
 
 export default function About() {
   return (
@@ -19,7 +19,7 @@ export default function About() {
       <AboutMeContainer>
         <AboutMe>
           <AboutMeImage>
-            <img src='' alt='my-image' />
+            <img src={AboutMeImg} alt='my-image' />
           </AboutMeImage>
         </AboutMe>
 
@@ -30,10 +30,12 @@ export default function About() {
             <CardDescription>2+ years of working</CardDescription>
           </AboutMeCard>
           <AboutContentParagraph>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            laboriosam eligendi voluptatum quaerat dolorem facere amet modi
-            distinctio consequatur quasi aut molestiae in at expedita numquam
-            quibusdam incidunt, voluptas doloremque.
+            An enthusiastic and creative full-stack developer with 2+ years of
+            experience. Strong in design and integration with intuitive problem
+            solving skills. Proficient in React JS, Node JS, Express JS and
+            MongoDB. Passionate about implementing and launching new projects.
+            Ability to translate business requirements into technical solutions
+            using advanced technologies.
           </AboutContentParagraph>
           <a href='#contact' className='btn btn-primary'>
             Let's Connect

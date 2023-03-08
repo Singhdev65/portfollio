@@ -7,7 +7,7 @@ import {
   SkillTitle
 } from "./styles"
 
-const skills = [
+const frontend = [
   {
     id: 1,
     name: "HTML",
@@ -25,36 +25,49 @@ const skills = [
   },
   {
     id: 4,
+    name: "Tailwind css",
+    skillLavel: "Intermediate"
+  },
+  {
+    id: 5,
     name: "MUI",
     skillLavel: "intermediate"
   },
   {
-    id: 5,
+    id: 6,
     name: "JavaScript",
     skillLavel: "Intermediate"
   },
   {
-    id: 6,
+    id: 7,
     name: "React",
     skillLavel: "Intermediate"
   },
   {
     id: 7,
+    name: "Redux",
+    skillLavel: "Intermediate"
+  },
+]
+
+const backend = [
+  {
+    id: 1,
     name: "Next Js",
     skillLavel: "Intermediate"
   },
   {
-    id: 7,
+    id: 2,
     name: "Node Js",
     skillLavel: "Intermediate"
   },
   {
-    id: 7,
+    id: 3,
     name: "Express Js",
     skillLavel: "Intermediate"
   },
   {
-    id: 7,
+    id: 4,
     name: "MongoDb",
     skillLavel: "Intermediate"
   }
@@ -68,7 +81,7 @@ export default function Skill() {
         <SkillCardContainer>
           <SkillTitle>Frontend Development</SkillTitle>
           <SkillContent>
-            {skills.map(skill => (
+            {frontend.map(skill => (
               <SkillDetails key={skill.id}>
                 <SkillIcon />
                 <div>
@@ -82,7 +95,7 @@ export default function Skill() {
         <SkillCardContainer>
           <SkillTitle>Backend Development</SkillTitle>
           <SkillContent>
-            {skills.map(skill => (
+            {backend.map(skill => (
               <SkillDetails key={skill.id}>
                 <SkillIcon />
                 <div>

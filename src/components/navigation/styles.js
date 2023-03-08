@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { mobile, tablet } from "../responsive"
 
 export const Nav = styled.nav`
   background: rgba(0, 0, 0, 0.3);
